@@ -11,6 +11,7 @@ time = Time.now.to_i
 CONFIG = %[
   add_prefix parsed
   key_name message
+  time_parse false
 ]
 ltsv_message = {'message' => "time:2013-11-20 23:39:42 +0900\tlevel:ERROR\tmethod:POST\turi:/api/v1/people\treqtime:3.1983877060667103"}
 ltsv_driver = create_driver(CONFIG + %[format ltsv])
